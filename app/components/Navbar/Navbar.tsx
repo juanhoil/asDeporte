@@ -4,10 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
-import Contactus from "./Contactus";
-
 
 interface NavigationItem {
   name: string;
@@ -77,12 +73,11 @@ const Navbar = () => {
                           {item.name}
                         </Link>
                       ))}
-                      <Contactus />
                     </div>
                   </div>
 
                   <div className='trapecioRectangulo flex items-center justify-center'>
-                    <div className='flex items-center justify-center'>
+                    <div className='flex bg-black items-center justify-center'>
                       {/* ICONS */}
                       <div className='trapecioRectanguloa bg-black h-20 flex items-center justyfy-center pl-4'>
                         <img

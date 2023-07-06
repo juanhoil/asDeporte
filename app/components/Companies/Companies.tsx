@@ -35,7 +35,7 @@ export default class MultipleItems extends Component {
       const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
@@ -55,7 +55,7 @@ export default class MultipleItems extends Component {
           {
             breakpoint: 700,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false
@@ -64,7 +64,7 @@ export default class MultipleItems extends Component {
           {
             breakpoint: 500,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false
@@ -80,8 +80,10 @@ export default class MultipleItems extends Component {
             <div>
               <Slider {...settings}>
                 {data.map((item, i) =>
-                  <div key={i}>
-                    <img src={item.imgSrc} alt={item.imgSrc} />
+                  <div key={i} className="flex justify-center items-center h-20 border-solid border-2 border-grey500">
+                    <div className="text-white text-center z-1">
+                      <img src={item.imgSrc} alt={item.imgSrc} className="mt-6 mx-auto"/>
+                    </div>
                   </div>
                 )}
               </Slider>
