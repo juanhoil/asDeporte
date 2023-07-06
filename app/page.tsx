@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <Companies />
-      <Tabs />
-      <Mentor />
-      <Students />
       <Newsletter />
+      <Mentor />
+      <Companies />
+      
+      
     </main>
   )
 }

@@ -41,10 +41,10 @@ const Navbar = () => {
               <div className="relative flex h-20 items-center justify-between">
 
                 {/* LOGO */}
-                <div className="flex px-3 flex-1 items-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="block lg:hidden"
+                      className="block lg:hidden pl-3"
                       style={{
                         width: '80%',
                       }}
@@ -52,7 +52,7 @@ const Navbar = () => {
                       alt="Courses-Logo"
                     />
                     <img
-                      className="hidden h-48px w-48px lg:block"
+                      className="hidden h-48px w-48px pl-3 lg:block"
                       src={'/assets/logo/Logo.svg'}
                       alt="Courses-Logo"
                     />
@@ -86,23 +86,23 @@ const Navbar = () => {
                       {/* ICONS */}
                       <div className='trapecioRectanguloa bg-black h-20 flex items-center justyfy-center pl-4'>
                         <img
-                            src={'/assets/icon/search.svg'}
-                            alt="search-Logo"
-                          />
-                          <div className="relative">
-                            <img src="/assets/icon/shoppingCart.svg" alt="shoppingCart-Logo" />
-                            <div className="absolute -top-1 -right-1 bg-red rounded-full w-4 h-4 flex items-center justify-center">
-                              <span className="text-white text-xs">1</span>
-                            </div>
+                          src={'/assets/icon/search.svg'}
+                          alt="search-Logo"
+                        />
+                        <div className="relative hidden md:block">
+                          <img src="/assets/icon/shoppingCart.svg" alt="shoppingCart-Logo" />
+                          <div className="absolute -top-1 -right-1 rounded-full w-4 h-4 flex items-center justify-center" style={{background:'red'}}>
+                            <span className="text-white text-xs">1</span>
                           </div>
-                          <div className="relative">
-                            <img src={'/assets/icon/bell.svg'} alt="bell-Logo" />
-                            <div className="absolute -top-1 -right-1 bg-red rounded-full w-4 h-4 flex items-center justify-center">
-                              <span className="text-white text-xs">1</span>
-                            </div>
+                        </div>
+                        <div className="relative">
+                          <img src={'/assets/icon/bell.svg'} alt="bell-Logo" />
+                          <div className="absolute -top-1 -right-1 rounded-full w-4 h-4 flex items-center justify-center" style={{background:'red'}}>
+                            <span className="text-white text-xs">1</span>
                           </div>
+                        </div>
                       </div>
-                      <div className='bg-current h-20 flex items-center justyfy-center px-4'>
+                      <div className='bg-black bg-current h-20 flex items-center justyfy-center pr-2 md:px-4'>
                         {/* AVATAR */}
                         <img
                           className="hidden md:block inline-block h-12 w-12 rounded-full ring-2 ring-white"
@@ -110,7 +110,7 @@ const Navbar = () => {
                           alt=""
                         />
                         {/* DRAWER ICON */}
-                        <Bars3Icon className="block md:hidden h-8 w-8" aria-hidden="true" onClick={() => setIsOpen(true)} />
+                        <Bars3Icon className="text-white block md:hidden h-8 w-8" aria-hidden="true" onClick={() => setIsOpen(true)} />
                       </div>
                     </div>
                   </div>
