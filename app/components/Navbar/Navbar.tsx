@@ -99,11 +99,14 @@ const Navbar = () => {
                       </div>
                       <div className='bg-black bg-current h-20 flex items-center justyfy-center pr-2 md:px-4'>
                         {/* AVATAR */}
-                        <img
-                          className="hidden md:block inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                          src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=..."
-                          alt=""
-                        />
+                        <div className='hidden md:block flex justyfy-center items-center'>
+                          <img
+                            className="h-12 w-12"
+                            src={'/assets/avatar/avatar.svg'}
+                            alt=""
+                          />
+                          <small className='text-white'>Mi cuenta</small>
+                        </div>
                         {/* DRAWER ICON */}
                         <Bars3Icon className="text-white block md:hidden h-8 w-8" aria-hidden="true" onClick={() => setIsOpen(true)} />
                       </div>
